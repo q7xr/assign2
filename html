@@ -1,0 +1,101 @@
+<!--
+  Project: One-Page Portfolio Website (Lab Assignment 2)
+  Page: index.html
+  Author: arnav
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | arnav</title>
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>arnav</h1>
+    <p>Student • Web Developer • Tech Enthusiast</p>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Explore my projects, skills, and ways to connect with me.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="arnav.jpg" alt="Profile photo of arnav" class="profile">
+      <p>Hello! I am arnav, a passionate web development student who enjoys creating simple and responsive web pages using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Weather App:</strong> Displays real-time weather using OpenWeather API.</li>
+        <li><strong>Portfolio Website:</strong> My personal site created with HTML and CSS.</li>
+        <li><strong>Todo List:</strong> A simple app to manage tasks effectively.</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>HTML</td><td>Advanced</td></tr>
+          <tr><td>CSS</td><td>Intermediate</td></tr>
+          <tr><td>JavaScript</td><td>Beginner</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Back to top button -->
+    <button id="back-to-top">↑ Top</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 arnav. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const topBtn = document.getElementById("back-to-top");
+    topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  </script>
+</body>
+</html>
